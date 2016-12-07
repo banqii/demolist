@@ -1,0 +1,46 @@
+.con {
+    /*flex布局横向*/
+    display: -webkit-flex;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    -webkit-box-direction: vertical;
+    /*-webkit-flex-direction:column;*/
+    float: left;
+}
+
+.con1 {
+    /*flex布局竖向*/
+    display: -webkit-flex;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    -webkit-box-direction: vertical;
+    -webkit-flex-direction:column;
+    float: left;
+}
+
+.first {
+    /*排序*/
+    -webkit-order: 2;
+    -webkit-flex: 1;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+}
+
+#second {
+    -webkit-order: 3;
+    -webkit-flex: 1;
+    height: 200px;
+    width: 200px;
+    background-color: #FF0000;
+}
+
+#three {
+    -webkit-order: 1;
+    -webkit-flex: 1;
+    height: 300px;
+    width: 300px;
+    background-color: #e3ff7f;
+}

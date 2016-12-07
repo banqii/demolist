@@ -1,0 +1,131 @@
+body {
+    font-family: arial;
+    background-color: #fff;
+}
+
+.row>div {
+    /*border: 1px solid #333;*/
+    text-align: center;
+}
+
+.col-md-12>input,
+.col-md-12>textarea,
+.col-md-12>table,
+.col-md-12>select {
+    width: 80%;
+    height: 32px;
+    margin: 30px auto 0 auto;
+    resize: vertical;
+}
+
+th,
+tr,
+td {
+    text-align: center;
+}
+
+
+/*删除按钮字体*/
+
+td input {
+    font-size: 12px!important;
+}
+
+
+/*tbody tr{
+    cursor: pointer;
+}*/
+
+
+/*表格中标题超出隐藏*/
+
+
+/*#datatable tr td:nth-child(3){
+    display: block;
+    width: 193px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 48px;
+    
+}*/
+
+.showbox {
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    display: none;
+}
+
+.showboxinner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -200px;
+}
+.insertbox{
+    display: none;
+    display: block;
+}
+.updatebox{
+    display: none;
+}
+.minpage{
+    position: absolute;
+    display: block;
+    width: 50px;
+    right: 0;
+    top: 0;
+    line-height: 34px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+.minpage:hover{
+    background-color: #EE3B3B;
+}
+
+/**/
+
+.partbg {
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 10px auto;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*提示*/
+
+.note {
+    width: 80px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -16px;
+    opacity: 0;
+    z-index: 10;
+}
+
+.notes {
+    background-color: #449d44;
+}
+
+.notef {
+    background-color: #c9302c;
+}

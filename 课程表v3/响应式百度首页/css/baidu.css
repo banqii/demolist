@@ -1,0 +1,633 @@
+* {
+    behavior: url(css/PIE.htc);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    min-height: 600px;
+    min-width: 810px;
+}
+
+header {
+    overflow: hidden;
+}
+
+
+/*导航栏*/
+
+header nav {
+    width: 510px;
+    float: right;
+    _float：right;
+    -float: right;
+    +float: right;
+    *float: right;
+    right: 0;
+    top: 0;
+    margin: 11px 0 5px 0;
+    padding: 0 16px 0 0;
+    text-align: right;
+}
+
+header nav a {
+    margin-left: 15px;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 16px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: #00f;
+}
+
+
+/*主体*/
+
+.content {
+    text-align: center;
+    width: 650px;
+    /*width: 62%;*/
+    margin: 0 auto;
+}
+
+.content form {
+    margin-top: 26px;
+}
+
+.content img {
+    padding-top: 65px;
+    width: 200px;
+    height: 65px;
+}
+
+.content input {
+    width: 540px;
+    /*width: 82%;*/
+    height: 34px;
+    float: left;
+    _float：left;
+    -float: left;
+    +float: left;
+    *float: left;
+    border: 1px solid;
+    border-right: 0;
+    border-color: #b8b8b8;
+    text-indent: 6px;
+    outline: 0;
+    min-width: 191px;
+}
+
+.content input:focus {
+    border-color: #38f;
+}
+
+.content input:hover {
+    border-color: #999;
+}
+
+.content button {
+    float: left;
+    /*position: absolute;*/
+    /*width: 100px;*/
+    /*margin-left: -5.6%;*/
+    width: 15%;
+    height: 38px;
+    border: 1px solid #3385ff;
+    background: #3385ff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    min-width: 81px;
+    max-width: 100px;
+}
+
+.content button:hover {
+    background-color: #2868c8;
+}
+
+
+/*底部*/
+
+footer {
+    padding-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footposition {
+    margin: auto;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    bottom: 20px;
+}
+
+.tdcode {
+    /*二维码div*/
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.tdcode1 {
+    /*二维码1*/
+    display: block;
+    float: left;
+    _float：left;
+    -float: left;
+    +float: left;
+    *float: left;
+    margin-top: 20px;
+}
+
+.tdcode2 {
+    /*二维码2*/
+    margin-left: 33px;
+    float: left;
+    _float：left;
+    -float: left;
+    +float: left;
+    *float: left;
+    margin-top: 20px;
+}
+
+.tdcodeimg {
+    /*二维码图片*/
+    float: left;
+    _float：left;
+    -float: left;
+    +float: left;
+    *float: left;
+}
+
+.tdcodetext {
+    /*二维码文字*/
+    float: left;
+    _float：left;
+    -float: left;
+    +float: left;
+    *float: left;
+    color: #999;
+    line-height: 23px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.shengming {
+    /*声明部分*/
+    display: inline-block;
+    text-align: left;
+    margin-left: 33px;
+    line-height: 12px;
+    position: relative;
+    top: -15px;
+}
+
+.shengming p {
+    /*p标签*/
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #999;
+}
+
+.shengming p span {
+    font: 12px arial;
+    color: none;
+}
+
+p b {
+    color: #666;
+    font-weight: bold;
+}
+
+.xuke {
+    font: 12px arial;
+}
+
+.plus-top {
+    display: none;
+}
+
+.plus-content {
+    display: none;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*响应式适配*/
+
+@media only screen and (max-width: 800px) {
+    html {
+        height: 100%;
+    }
+    body {
+        font: 12px arial;
+        height: 100%;
+        background-color: #eeeff0;
+    }
+    nav {
+        display: none;
+    }
+    .wrapper {
+        min-width: 0px;
+    }
+    .content {
+        display: none;
+    }
+    .footposition {
+        display: none;
+    }
+    .plus-top {
+        display: block;
+        height: 54px;
+        position: relative;
+    }
+    .plus-top-link {
+        float: right;
+        width: 100px;
+    }
+    .plus-top-tianqi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0 6px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .plus-top a {
+        float: right;
+        margin-right: 10px;
+        line-height: 40px;
+    }
+    .plus-content {
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+    .plus-content-logo {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .plus-content img {
+        margin: 0 auto;
+        width: 175px;
+        height: 55px;
+    }
+    form {
+        margin: 0 10px;
+        display: block;
+    }
+    .innerinput {
+        width: 100%;
+        text-align: center;
+        height: 42px;
+        min-width: 136px;
+    }
+    input {
+        float: left;
+        width: 100%;
+        height: 44px;
+        border: 1px solid;
+        border-right: 0;
+        border-color: #b8b8b8;
+        text-indent: 20px;
+        outline: 0;
+        font-size: 40px;
+        box-sizing: border-box;
+    }
+    button {
+        margin-left: -100%;
+        float: right;
+        width: 82px;
+        height: 44px;
+        border: 1px solid #3385ff;
+        background: #3385ff;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+    }
+    .plus-content .navs {
+        margin: 17px 0 14px;
+        height: 42px;
+    }
+    .plus-content .navs a {
+        display: block;
+        float: left;
+        width: 16%;
+        font-size: 12px;
+        color: #666;
+        text-decoration: none;
+    }
+    .navs a:first-child {
+        margin-left: 4%;
+    }
+    .plus-content .navs a:before {
+        content: '\e51';
+        color: #666;
+        font: 24px/1 'icons';
+        margin-left: 4px;
+    }
+    @font-face {
+        font-family: 'icons';
+        src: url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.eot);
+        src: url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.eot#iefix) format('embedded-opentype'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.woff) format('woff'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.ttf) format('truetype'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.svg?#iconfont) format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+    .plus-content .links {
+        background: #fff;
+        height: 119px;
+        margin: 20px 10px;
+    }
+    .links-title h2 {
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #999;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .links .links-link {
+        margin: -20px 0 0 20px;
+    }
+    .links .links-link a {
+        font-size: 14px;
+        color: #000;
+        float: left;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 6px;
+        width: 25%;
+        height: 42px;
+        line-height: 42px;
+        text-decoration: none;
+    }
+    .plus-content .hots {
+        background: #fff;
+        height: 205px;
+        margin: 20px 10px;
+    }
+    .hots-title h2 {
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #999;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .hots .hots-link {
+        margin: -20px 0 0 20px;
+    }
+    .hots .hots-link a {
+        font-size: 14px;
+        color: #000;
+        float: left;
+        display: inline-block;
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        vertical-align: top;
+        text-decoration: none;
+    }
+    .hots-bottom {
+        width: 100%;
+        border-top: 1px solid #e4e4e4;
+        float: left;
+    }
+    .hots-bottom a {
+        float: right;
+        font-size: 14px;
+        text-decoration: none;
+        margin:15px 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        height: 100%;
+    }
+    body {
+        font: 10px arial;
+        height: 100%;
+        background-color: #eeeff0;
+    }
+    nav {
+        display: none;
+    }
+    .wrapper {
+        min-width: 0px;
+    }
+    .content {
+        display: none;
+    }
+    .footposition {
+        display: none;
+    }
+    .plus-top {
+        display: block;
+        height: 54px;
+        position: relative;
+    }
+    .plus-top-link {
+        float: right;
+        width: 100px;
+    }
+    .plus-top-tianqi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0 6px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .plus-top a {
+        float: right;
+        margin-right: 10px;
+        line-height: 40px;
+    }
+    .plus-content {
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+    .plus-content-logo {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .plus-content img {
+        margin: 0 auto;
+        width: 175px;
+        height: 55px;
+    }
+    form {
+        margin: 0 10px;
+        display: block;
+    }
+    .innerinput {
+        width: 100%;
+        text-align: center;
+        height: 38px;
+        min-width: 136px;
+    }
+    input {
+        float: left;
+        width: 100%;
+        height: 40px;
+        border: 1px solid;
+        border-right: 0;
+        border-color: #b8b8b8;
+        text-indent: 20px;
+        outline: 0;
+        font-size: 40px;
+        box-sizing: border-box;
+    }
+    button {
+        margin-left: -100%;
+        float: right;
+        width: 82px;
+        height: 40px;
+        border: 1px solid #3385ff;
+        background: #3385ff;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+    }
+    .plus-content .navs {
+        margin: 17px 0 14px;
+        height: 42px;
+    }
+    .plus-content .navs a {
+        display: block;
+        float: left;
+        width: 16%;
+        font-size: 12px;
+        color: #666;
+        text-decoration: none;
+    }
+    .navs a:first-child {
+        margin-left: 4%;
+    }
+    .plus-content .navs a:before {
+        content: '\e51';
+        color: #666;
+        font: 20px/1 'icons';
+        margin-left: 4px;
+    }
+    @font-face {
+        font-family: 'icons';
+        src: url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.eot);
+        src: url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.eot#iefix) format('embedded-opentype'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.woff) format('woff'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.ttf) format('truetype'), url(//m.baidu.com/static/index/iconfont/iconfont_b2795733.svg?#iconfont) format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+    .plus-content .links {
+        background: #fff;
+        height: 119px;
+        margin: 20px 10px;
+    }
+    .links-title h2 {
+        line-height: 40px;
+        font-size: 11px;
+        font-weight: normal;
+        color: #999;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .links .links-link {
+        margin: -20px 0 0 20px;
+    }
+    .links .links-link a {
+        font-size: 10px;
+        color: #000;
+        float: left;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 6px;
+        width: 25%;
+        height: 42px;
+        line-height: 42px;
+        text-decoration: none;
+    }
+    .plus-content .hots {
+        background: #fff;
+        height: 205px;
+        margin: 20px 10px;
+    }
+    .hots-title h2 {
+        line-height: 40px;
+        font-size: 10px;
+        font-weight: normal;
+        color: #999;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .hots .hots-link {
+        margin: -20px 0 0 20px;
+    }
+    .hots .hots-link a {
+        font-size: 10px;
+        color: #000;
+        float: left;
+        display: inline-block;
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        vertical-align: top;
+        text-decoration: none;
+    }
+    .hots-bottom {
+        width: 100%;
+        border-top: 1px solid #e4e4e4;
+        float: left;
+    }
+    .hots-bottom a {
+        float: right;
+        font-size: 10px;
+        text-decoration: none;
+        margin:15px 20px;
+    }
+}
+
+

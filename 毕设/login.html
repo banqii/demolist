@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="warpper">
+        <div class="mainbox">
+            <h1>欢迎进入进销存管理系统</h1>
+            <div class="loginbox">
+            	<h4>${loginerror}</h4>
+                <div class="middle-left"></div>
+                <div class="middle-right"></div>
+                <div class="middle-shadow"></div>
+                <form action="login" method="post">
+                    <input class="inputtext" id="username" placeholder="用户名" type="text" />
+                    <input class="inputtext" id="password" placeholder="密码" type="password" />
+                    <input class="buttom" type="submit" value="登录" />
+                </form>
+                <p class="registlink" onclick="showregist()">注册>></p>
+            </div>
+        </div>
+        <!-- 背景 -->
+        <div class="middle">
+        </div>
+        <!-- 注册表单 -->
+        <div id="registbg" class="registbg">
+            <div id="registbox" class="registbox">
+            	<div class="minbuttombg" onclick="registhide()">
+            		<div class="minbuttom"></div>
+            	</div>
+            	<h4>${registerror}</h4>
+                <form action="regist" method="POST">
+                    <input class="inputtext" name="username" type="text" placeholder="用户名"/>
+                    <input class="inputtext" name="password" type="text" placeholder="密码"/>
+                    <input class="inputtext" name="passwordchack" type="text" placeholder="确认密码"/>
+                    <select class="inputtext" name="department">
+                        <option value="null" selected="selected">请选择部门</option>
+                        <option value="销售部">销售部</option>
+                        <option value="采购部">采购部</option>
+                        <option value="仓库">仓库</option>
+                    </select>
+                    <input class="inputtext" name="registpermit" type="text" placeholder="注册码"/>
+                    <input class="buttom" type="submit"  value="注册"/>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+        	function showregist(){
+        		document.getElementById("registbg").style.cssText = "opacity: 1;z-index: 1000;";
+        		document.getElementById("registbox").style.cssText = "height: 356px;";
+        	}
+        	function registhide(){
+        		document.getElementById("registbg").style.cssText = "opacity: 0;z-index: 1;";
+        		document.getElementById("registbox").style.cssText = "height: 250px;";
+        	}
+        </script>
+    </div>
+</body>
+
+</html>

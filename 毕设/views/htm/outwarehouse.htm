@@ -1,0 +1,27 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<hr/>
+<div id="chackwarehouse" class="wstyle chackwarehousebg">
+    <div class="innerwarehouse">
+        <form action="chackwarehouse" method="POST">
+            <input name="chackware_id" placeholder="盘点单号" type="text" />
+            <input name="chackdate" placeholder="盘点日期" type="text" />
+            <input name="chackname" placeholder="盘点员" type="text" />
+            <input name="empname" placeholder="操作员" type="text"/>
+            <hr/>
+            <div class="chackwarehousegoods">
+                <input name="goods_id" placeholder="商品ID" type="text" />
+                <input name="gname" placeholder="名称" type="text" />
+                <input name="gtype" placeholder="规格" type="text" />
+                <input name="gunits" placeholder="单位" type="text" />
+                <input name="gnumber" placeholder="数量" type="text" />
+                <input name="gprice" placeholder="单价" type="text" />
+                <input name="gsupplier" placeholder="供货商" type="text" />
+            </div>
+            <br/>
+            <br/>
+            <label id="totle">总额:</label>
+            <hr/>
+            <input class="button" type="submit" value="生成入库单"   disabled="disabled" />
+        </form>
+    </div>
+</div>

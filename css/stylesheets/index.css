@@ -1,0 +1,36 @@
+table {
+    color: red;
+}
+
+.test {
+    color: yellow;
+}
+
+#tableid {
+    color: orange;
+}
+
+.outer table,
+.pp {
+    color: blue;
+}
+
+input[type=text] {
+    color: green;
+}
+
+a:link{color: #FF0000;}
+a:visited{color: #00FF00;}
+a:hover{color:#FF00FF;}
+a:active{color:#0000FF;}
+:first-of-type
+:last-of-type
+:selection
+a::before{
+	content:‘\f04’;
+	color:red;
+}
+a::after{
+	content:' hello';
+	color:green;
+}

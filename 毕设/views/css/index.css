@@ -1,0 +1,277 @@
+        body,
+div,
+header,
+nav,
+article,
+ul,
+li,
+p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    position: relative;
+    min-width: 870px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+
+/*头部*/
+
+header {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    position: relative;
+}
+
+
+/*登录人员信息*/
+
+.logininf {
+    color: #fff;
+    line-height: 6px;
+    position: absolute;
+    right: 10px;
+}
+
+.logininf p {
+    margin: 18px 20px;
+    display: inline-block;
+}
+.logininf p a{
+    color: #fff;
+}
+
+/*导航栏*/
+
+nav {
+    height: 100%;
+    background-color: #2D85CA;
+    width: 150px;
+    margin-top: -40px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    text-align: right;
+    float: left;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    padding-right: 20px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #93BEFE;
+}
+
+nav ul li:hover {
+    background-color: #93BEFE;
+}
+
+
+/*导航栏图标*/
+
+.sicon {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 12px;
+    top: 4px;
+}
+
+
+/* 正文位置 */
+
+.pos {
+    background-color: #ccc;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    right: 0px;
+    bottom: 0px;
+    float: right;
+}
+
+.pointleft {
+    position: absolute;
+    left: -20px;
+    border-right: 10px solid #ccc;
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+    width: 0px;
+    height: 0px;
+}
+
+.ppoint {
+    top: 16px;
+}
+
+.wpoint {
+    top: 66px;
+}
+
+.spoint {
+    top: 116px;
+}
+
+
+/*正文切换*/
+
+.purchase {
+    /*transform: translateX(-40px);*/
+    opacity: 1;
+    z-index: 100;
+    transition: .5s;
+}
+
+.warehouse {
+    /*transform: translateX(-40px);*/
+    opacity: 1;
+    z-index: 100;
+    transition: .5s;
+}
+
+.sale {
+    /*transform: translateX(-40px);*/
+    opacity: 1;
+    z-index: 100;
+    transition: .5s;
+}
+
+.purchasehide {
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+}
+
+.warehousehide {
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+}
+
+.salehide {
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+}
+
+
+/*仓库管理 begin*/
+
+.inner {
+    margin: 20px 20px 20px 20px;
+    overflow: visible;
+}
+
+.head {
+    margin: 20px 20px 10px 20px;
+    width: 600px;
+}
+
+.inner .head ul {
+    list-style: none;
+}
+
+.inner .head ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    cursor: pointer;
+    height: 42px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.inner .head ul li:hover {
+    background-color: #ddd;
+}
+
+.inner .head ul li p {
+    font-size: 18px;
+    display: inline-block;
+    margin: 3px 0 3px 0;
+    position: relative;
+    top: -1px;
+    left: 19px;
+}
+
+.inner .head ul li img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+    left: 9px;
+}
+
+.wstyle {
+    position: absolute;
+    top: 96px;
+    left: 44px;
+    right: 7%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, .3);
+}
+
+.inwarehousebg {
+    /*transform: rotateY(-90deg) translateZ(300px);*/
+    display: none;
+}
+
+.outwarehousebg {
+    /*transform: rotateY(0deg) translateZ(300px);*/
+    display: none;
+}
+
+.chackwarehousebg {
+    /*transform: rotateY(90deg) translateZ(300px);*/
+    display: none;
+}
+
+.innerwarehouse {
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.innerwarehouse form input{ 
+    height: 24px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.innerwarehouse form .button{
+    background-color: #2D85CA;
+    border: 1px solid #2D85CA;
+    color: #fff;
+}
+
+.innerwarehouse form .button:hover{
+    background-color: #93BEFE;
+    border: 1px solid #93BEFE;
+}
+/*仓库管理 end*/
+
+
+
+/*动态适配*/
+
+@media only screen and (max-width)

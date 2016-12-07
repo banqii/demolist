@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery基础运用</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div class="test" data-name="第一个">
+        asdfasdfas
+    </div>
+    <input id="btn" type="button" value="动画测试" name="" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#btn').click(function() {
+            // $('.test').toggle(1000);
+            // $('.test').slideToggle(1000);
+            $('.test').animate({
+                width: "90%",
+                height: "100%",
+                fontSize: "30px",
+                borderWidth: 10
+            }, 1000);
+            $('.test').ajax({
+                url: '';
+                datatype:'json',
+                success:function(data){
+                    console.log(data.a);
+                }
+                error:function(){
+                    
+                }
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>

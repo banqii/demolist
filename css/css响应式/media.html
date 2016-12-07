@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <title>css响应式</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 62.5%;
+    }
+    
+    .left {
+        float: left;
+        width: 20%;
+        height: 500px;
+        background: aquamarine;
+        transition: width 1s ease;
+    }
+    
+    .middle {
+        float: left;
+        width: 55%;
+        height: 800px;
+        margin: 0 5px 0 5px;
+        background: coral;
+        transition: width 1s ease;
+    }
+    
+    .right {
+        float: left;
+        width: 20%;
+        height: 500px;
+        background: yellowgreen;
+        transition: width 1s ease;
+    }
+    
+    .container {
+        margin: 5px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        .container {
+            width: 1000px;
+            margin-right: auto;
+            overflow: hidden;
+            margin: auto;
+        }
+    }
+    
+    @media only screen and (min-width: 400px) and (max-width: 1024px) {
+        .right {
+            display: none;
+        }
+        .left {
+            width: 30%;
+        }
+        .middle {
+            width: 65%;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        .left,
+        .middle,
+        .right {
+            width: 98%;
+            height: 180px;
+        }
+        #animation {
+            -webkit-animation: rotateInUpLeft 1s .2s ease both;
+            -moz-animation: rotateInUpLeft 1s .2s ease both;
+        }
+        @-webkit-keyframes rotateInUpLeft {
+            0% {
+                -webkit-transform-origin: left bottom;
+                -webkit-transform: rotate(90deg);
+                opacity: 0
+            }
+            100% {
+                -webkit-transform-origin: left bottom;
+                -webkit-transform: rotate(0);
+                opacity: 1
+            }
+        }
+        @-moz-keyframes rotateInUpLeft {
+            0% {
+                -moz-transform-origin: left bottom;
+                -moz-transform: rotate(90deg);
+                opacity: 0
+            }
+            100% {
+                -moz-transform-origin: left bottom;
+                -moz-transform: rotate(0);
+                opacity: 1
+            }
+        }
+        .middle {
+            margin: 5px 0 5px 0;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            我是左边
+        </div>
+        <div class="middle" id="animation">
+            我是中间
+        </div>
+        <div class="right">
+            我是右边
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body{
+	/*背景*/
+	background-color: #6C6CF3;	
+}
+header{
+
+}
+article{
+	/*正文*/
+	width: 700px;
+	margin: auto;
+	background-color: #fff;
+	border-radius:30px;
+	box-shadow:5px 5px 5px rgba(0,0,0,.6);
+}
+footer{
+	
+}
+.innerhead{
+	
+}
+.table {
+	/*表格*/
+	margin-top: 20px;
+	width: 600px;
+	border-collapse: collapse;
+	margin: auto;
+	line-height: 2;
+}
+.table tbody tr td:nth-child(1){
+	/*表格第一列*/
+	text-align: right;
+}
+.logo{
+	/*logo位置*/
+	float: left;
+}
+a{
+	/*连接标签*/
+	font-size: 14px;
+	color: red;
+}
+.span{
+	/*连接标签位置*/
+	float: right;
+	width: 200px;
+	margin-top: 50px;
+}
+.submit{
+	/*提交按钮位置*/
+	height:50px;
+	text-align:center;
+}
+.innerfoot{
+	/*表格底部*/
+	font-size: 12px;
+	text-align: center;
+}
+.f{
+	/*字体样式*/
+	margin-top: 0;
+	font-size: 10px;
+	color: blue;
+	line-height: 1.3;
+}

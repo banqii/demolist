@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	.mytransition{
+		width: 200px;
+		height: 200px;
+		background-color: yellowgreen;
+		margin-top: 15px;
+		transition-property:all;
+		transition-duration:.5s;
+		transition-timing-function:ease-in;
+		transition-delay:.1s;
+	}
+	.mytransition:hover{
+		background-color: orange;
+		width: 400px;
+		height: 400px;
+	}
+	.a1{
+		-webkit-transform:translate(200px);
+		-webkit-animation:animations 2s ease-out;
+		animation-iteration-count:infinite;
+	}
+	@-webkit-keyframes animations{
+		0%{-webkit-transform:translate(0);opacity:0;}
+		50%{-webkit-transform:translate(30px);opacity:1;}
+		70%{-webkit-transform:translate(35px);opacity:1;}
+		100%{-webkit-transform:translate(100px);opacity:0;}
+	}
+	</style>
+</head>
+<body>
+	<div class="mytransition">
+		<span class="a1">我是动画</span>
+	</div>
+</body>
+</html>

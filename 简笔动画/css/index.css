@@ -1,0 +1,366 @@
+* {
+	/*初始化*/
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #000040;
+}
+/*流星-开始*/
+.s1{
+	animation: spaces 0.5s linear 0s infinite normal none;
+	-webkit-animation: spaces 0.5s linear 0s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 200px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s2{
+	animation: spaces 1s linear  1.4s infinite normal none;
+	-webkit-animation: spaces 1s linear 1.4s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 800px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s3{
+	animation: spaces 0.7s linear 1.3s infinite normal none;
+	-webkit-animation: spaces 0.7s linear 1.3s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 1200px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s4{
+	animation: spaces 0.6s linear 1.7s infinite normal none;
+	-webkit-animation: spaces 0.6s linear 1.7s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 1600px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s5{
+	animation: spaces 0.5s linear 0.5s infinite normal none;
+	-webkit-animation: spaces 0.5s linear 0.5s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 2000px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s6{
+	animation: spaces 0.5s linear 0s infinite normal none;
+	-webkit-animation: spaces 0.5s linear 0s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 2400px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s7{
+	animation: spaces 1s linear  1.4s infinite normal none;
+	-webkit-animation: spaces 1s linear 1.4s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 2800px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s8{
+	animation: spaces 0.7s linear 1.3s infinite normal none;
+	-webkit-animation: spaces 0.7s linear 1.3s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 3200px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s9{
+	animation: spaces 0.6s linear 1.7s infinite normal none;
+	-webkit-animation: spaces 0.6s linear 1.7s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 3600px;
+	margin-top: -100px;
+	z-index: 0;
+}
+.s10{
+	animation: spaces 0.5s linear 0.5s infinite normal none;
+	-webkit-animation: spaces 0.5s linear 0.5s infinite normal none;
+	position: absolute;
+	background: -webkit-linear-gradient( top,#fff,#000);
+	width: 1px;
+	height: 100px;
+	border: none;
+	margin-left: 3800px;
+	margin-top: -100px;
+	z-index: 0;
+}
+/*流星-结束*/
+.center {
+	/*居中*/
+	animation: fly 3s ease-in-out 0s infinite alternate none;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+.flag{
+	/*红旗*/
+	position: absolute;
+	background-color: #f00;
+	width: 95px;
+	height: 30px;
+	margin-top: 105px;
+	margin-left: 53px;
+
+}
+.rocket {
+	/*火箭箭身*/
+    width: 200px;
+    height: 400px;
+    border-radius: 300px 300px 0 0;
+    position: absolute;
+    border: 4px solid #000;
+    border-bottom: none;
+    transform: scale(0.46, 1);
+    float: left;
+    margin-left: 100px;
+    background-color: #EFEFEF;
+}
+
+.top {
+	/*喷口上部*/
+    background-color: rgba(130, 134, 138, 1);
+    margin-top: 359px;
+    margin-left: 180px;
+    position: absolute;
+    border-radius: 80px;
+    transform: scale(2, 0.25);
+    width: 48px;
+    height: 80px;
+}
+
+.middle {
+	/*喷口中部*/
+    border-bottom: 33px solid rgba(132, 134, 138, 1);
+    position: absolute;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    height: 0;
+    width: 92px;
+    margin-top: 397px;
+    margin-left: 141px;
+}
+
+.bottom {
+	/*喷口下部*/
+    margin-top: 359px;
+    margin-left: 180px;
+    position: absolute;
+    border-radius: 80px;
+    border: 3px solid rgba(130, 134, 138, 1);
+    transform: scale(2, 0.25);
+    width: 57px;
+    height: 60px;
+    margin-top: 395px;
+    margin-left: 173px;
+}
+
+.fire {
+	/*火外框*/
+    position: absolute;
+    height: 100px;
+    margin-top: 397px;
+    margin-left: 190px;
+}
+
+.no1 {
+	/*火苗1*/
+	animation: fire .25s linear -1.6s infinite alternate none;
+	-webkit-animation: fire .25s linear -1.6s infinite alternate none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 100px solid #F3382A;
+    margin-top: 33px;
+    margin-left: -17px;
+    opacity: .8;
+}
+.no2 {
+	/*火苗2*/
+	animation: fire .25s linear -1.4s infinite alternate none;
+	-webkit-animation: fire .25s linear -1.4s infinite alternate none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 100px solid #FF0000;
+    margin-top: 33px;
+    margin-left: -17px;
+    opacity: .5;
+}
+.no3 {
+	/*火苗3*/
+	animation: fire .25s linear -1.2s infinite alternate none;
+	-webkit-animation: fire .25s linear -1.2s infinite alternate none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 64px solid #FF7905;
+    margin-top: 33px;
+    margin-left: -29px;
+    opacity: .8;
+}
+
+.no4 {
+	/*火苗4*/
+	animation: fire .25s linear -1.0s infinite alternate none;
+	-webkit-animation: fire .25s linear -1.0s infinite alternate none; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 84px solid #FFA500;
+    margin-top: 33px;
+    margin-left: -9px;
+    opacity: .8;
+}
+/*火的动作*/
+@keyframes fire {
+	100% {
+		-webkit-transform: skew(30deg);
+		transform: skew(10deg);
+	}
+	74% {
+		-webkit-transform: skew(-15deg);
+		transform: skew(-15deg);
+	}
+	58% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+	30% {
+		-webkit-transform: skew(-35deg);
+		transform: skew(-35deg);
+	}
+	0% {
+		-webkit-transform: skew(25deg);
+		transform: skew(25deg);
+	}
+}
+@-webkit-keyframes fire {
+	100% {
+		-webkit-transform: skew(30deg);
+		transform: skew(10deg);
+	}
+	74% {
+		-webkit-transform: skew(-15deg);
+		transform: skew(-15deg);
+	}
+	58% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+	30% {
+		-webkit-transform: skew(-35deg);
+		transform: skew(-35deg);
+	}
+	0% {
+		-webkit-transform: skew(25deg);
+		transform: skew(25deg);
+	}
+}
+/*火箭飞的动作*/
+@keyframes fly {
+	100% {
+		-webkit-transform: translate(40px, 60px) rotate(-4deg);
+		transform: translate(40px, 60px)
+	}
+	66% {
+		-webkit-transform: translate(-30px, -50px) rotate(5deg);
+		transform: translate(-30px, -50px) rotate(5deg)
+	}
+	36% {
+		-webkit-transform: translate(50px, 40px) rotate(-6deg);
+		transform: translate(50px, 40px) rotate(-6deg)
+	}
+	0% {
+		-webkit-transform: translate(-40px, -30px) rotate(5deg);
+		transform: translate(-40px, -30px) rotate(5deg)
+	}
+	}
+}
+@-webkit-keyframes fly {
+	100% {
+		-webkit-transform: translate(40px, 60px) rotate(-4deg);
+		transform: translate(40px, 60px)
+	}
+	66% {
+		-webkit-transform: translate(-30px, -50px) rotate(5deg);
+		transform: translate(-30px, -50px) rotate(5deg)
+	}
+	36% {
+		-webkit-transform: translate(50px, 40px) rotate(-6deg);
+		transform: translate(50px, 40px) rotate(-6deg)
+	}
+	0% {
+		-webkit-transform: translate(-40px, -30px) rotate(5deg);
+		transform: translate(-40px, -30px) rotate(5deg)
+	}
+	}
+}
+/*流星的动作*/
+@keyframes spaces {
+	100% {
+		-webkit-transform: translate(0, 1900px);
+		transform: translate(0, 1900px);
+	}
+}
+@-webkit-keyframes spaces {
+	100% {
+		-webkit-transform: translate(0, 1900px);
+		transform: translate(0, 1900px);
+	}
+	
+}

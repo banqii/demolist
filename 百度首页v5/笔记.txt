@@ -1,0 +1,8 @@
+1.网页结构要清晰<header></header>
+		<article></article>
+		<footer></footer>
+2.多用h5新增标签，合并重复的代码，增强代码可读性
+3.图片本地化
+4.注释*
+5.用外部的css或者js
+6.尽量把属性都移到css中

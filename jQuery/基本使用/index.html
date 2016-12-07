@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery基础运用</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript">
+    // var mydiv2 = document.getElementsByClassName('text');
+    // console.log("原生对象查找：" , mydiv2);
+    //ready  =>  html骨架准备完成
+    //inload =>  整个页面加载完成
+    // $(); => array
+    // 执行了到了福
+    // $(document).ready(function(){
+    // 	var mydiv = $('.test');
+    // 	console.log("jquery ready事件查找：",mydiv);
+    // });
+    // $(选择器/对象).动作（）;
+    // $(function() {
+    //     alert($("#myimg").length);
+    // });
+    $(function(){
+    	// $('.test').click(function(e){
+    	// 	console.log(e);
+    	// });
+    	// $('.test').on('click',function(e){
+    	// 	$('.test').append("<p>Hello</p>");
+    	// });
+
+
+    	$('.test').on('click','#myp',function(){
+    		alert('我是新p')
+    	});
+
+    	// $('#myp').click(function(){
+    	// 	alert('我是新p')
+    	// });
+    	$('#btn').on('click',function(e){
+    		$('.test').append('<p id="myp">Hello</p>');
+    		// $('.test').css('color','white');
+    		$('.test').toggleClass('txt');
+    	});
+    	$('.test').each(function(){
+    		console.log($(this).attr('data-name'));
+    	});
+    });
+    </script>
+</head>
+
+<body>
+    <div class="test" data-name="第一个">
+    </div>
+    <div class="test" data-name="第二个">
+    </div>
+    <!-- <img id="myimg" src="image/a.jpg"> -->
+    <input id="btn" type="button" value="点我" name=""/>
+</body>
+
+</html>

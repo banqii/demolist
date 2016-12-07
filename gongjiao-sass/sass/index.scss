@@ -1,0 +1,120 @@
+body,
+div,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+$color-green: #008B45!default;
+$color-red: #cc3333!default;
+$station-count: 15!default; //站的数量
+
+
+
+@mixin text-box($border-color) {
+	//最外边框的样式
+    font-family: '黑体';
+    width: 700px;
+    height: 350px;
+    margin: 10px auto;
+    border: 2px solid $color-green;
+}
+
+@mixin station-item($scount) {
+	//站名的样式
+    -webkit-writing-mode: vertical-lr;
+    float: left;
+    width: 100% / $scount;
+    font-size: 20px;
+    color: #fff;
+    line-height: 20px;
+}
+
+@mixin schedule($color-green, $color-red, $station-count) {
+	//整个布局的样式
+    $color-green: #008B45!default;
+    $color-red: #cc3333!default;
+    $station-count: 15!default; //站的数量
+    span {
+        display: inline-block;
+    }
+    .name {
+        height: 30%;
+        width: 100%;
+        .bus-name {
+            background-color: $color-red;
+            height: 75%;
+            width: 25%;
+            color: #fff;
+            font-size: 50px;
+            font-weight: bolder;
+            margin-top: 20px;
+            text-align: center;
+            p {
+                margin: 0;
+                line-height: 70px;
+            }
+        }
+        .station-name {
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            width: 73%;
+        }
+    }
+    .time {
+        padding-left: 10px;
+        span {
+            font-weight: bold;
+        }
+    }
+    .stations {
+        width: 100%;
+        height: 160px;
+        background-color: $color-green;
+        padding-top: 5px;
+        li {
+            @include station-item($station-count);
+            list-style: none;
+        }
+    }
+    .massages {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        .msg {
+            p {
+                font-size: 12px;
+                font-weight: bolder;
+            }
+        }
+        .dir {
+            .line {
+                position: absolute;
+                height: 3px;
+                width: 525px;
+                top: 20px;
+                left: 90px;
+                background-color: $color-red;
+            }
+            .triangle {
+                position: absolute;
+                width: 0;
+                left: 609px;
+                top: 13px;
+                border-top: 10px solid transparent;
+                border-left: 10px solid $color-red;
+            }
+        }
+    }
+}
+
+.schedule1 {
+    @include text-box($color-green);
+    @include schedule($color-green, $color-red, $station-count);
+}
+
+.schedule2 {
+    @include text-box($color-green);
+    @include schedule($color-green, $color-red, 9);
+}

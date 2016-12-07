@@ -1,0 +1,21 @@
+{
+  "name": "nodejs_server",
+  "version": "1.0.0",
+  "description": "server for baidunews",
+  "main": "main.js",
+  "dependencies": {
+    "easymysql": "^0.2.7",
+    "express": "^4.14.0",
+    
+  },
+  "devDependencies": {
+    "easymysql": "^0.2.7",
+    "express": "^4.14.0",
+    "npm": "^3.10.6"
+  },
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "banqii",
+  "license": "ISC"
+}

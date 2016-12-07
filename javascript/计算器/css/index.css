@@ -1,0 +1,99 @@
+body,
+.wrapper,
+div,
+ul{
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	font-family:  Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+.countbox{
+	height: 503px;
+	width: 400px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -250px;
+	border: 1px solid #E5E5E5;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+/*标题：计算器*/
+.title{
+	line-height: 10px;
+	font-size: 13px;
+	margin-left: 10px;
+}
+/*输入框*/
+.inputtextouter{
+	width: 370px;
+	overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+.inputtext{
+	width: 2000px;
+    line-height: 39px;
+    font-size: 42px;
+    text-align: right;
+    float: right;
+}
+.inputline{
+	position: absolute;
+    width: 370px;
+    height: 15px;
+    top: 29px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #101010;
+    text-align: right;
+    margin-left: 10px;
+    overflow: auto;
+}
+/*函数区*/
+.functionarea{
+	width: 400px;
+	height: 50px;
+}
+.functions{
+	height: 50px;
+	width: 100px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+.functions:hover{
+	background-color: #ccc;
+}
+
+/*按键区*/
+.buttonarea{
+	width: 400px;
+	background-color: #E5E5E5;
+	height: 294px;
+}
+.setblock{
+	 font-weight: bold;
+}
+.buttonarea ul{
+	list-style: none;
+}
+.buttonarea ul li{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 59px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 60px;
+	font-size: 23px;
+}
+.buttonarea ul li:hover{
+	background-color: #ccc;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>position 的学习</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+    
+    div {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .rel {
+        background-color: orange;
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+    
+    .abs {
+        background-color: green;
+        display: inline-block;
+    }
+    
+    .outer {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        /*float: left;*/
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="rel">
+        </div>
+    </div>
+    <div class="abs">
+    </div>
+</body>
+
+</html>

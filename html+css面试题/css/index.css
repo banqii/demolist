@@ -1,0 +1,31 @@
+body{
+	text-align: center;
+	background-color: #D8D7D7;
+	font-family: Verdana, "Microsoft Yahei";
+}
+/*正文*/
+article{
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+}
+p{
+	line-height: 110%;
+	margin-left: 30px;
+	color: #333;
+}
+h4{
+	color:#333;
+}
+/*脚注*/
+footer{
+	width: 500px;
+	margin: 0 auto;
+	text-align: left;
+}
+footer ul li a{
+	text-decoration: none;
+}

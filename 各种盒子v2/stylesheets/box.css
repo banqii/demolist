@@ -1,0 +1,43 @@
+* {
+    /*去掉浏览器默认边距*/
+    margin: 0;
+    padding: 0;
+}
+
+
+.neirong {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    overflow: auto;
+}
+
+.box {
+    /*正常盒子*/
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, .6);
+    margin: 100px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 5px solid red;
+}
+
+.neirong1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.box1 {
+    /*怪异盒子*/
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, .6);
+    margin: 50px;
+    margin-left: 100px;
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    background-color: aqua;
+    border: 5px solid red;
+    box-sizing: border-box;
+}

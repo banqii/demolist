@@ -1,0 +1,1900 @@
+div,
+header,
+article,
+footer,
+input,
+span,
+a,
+em,
+nav,
+ul,
+li,
+i,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    分割线以上      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.wrapper {
+    height: 100%;
+}
+
+.header-top {
+    width: 1000px;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+.header-top .logo {
+    float: left;
+    width: 113px;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.header-top .header-top-search {
+    float: left;
+    border: 1px solid #e4e4e4;
+    width: 380px;
+    height: 38px;
+    left: 500px;
+    top: 15px;
+    margin: 5px 0 0 200px;
+}
+
+.header-top .header-top-search .search-text {
+    height: 16px;
+    width: 300px;
+    margin: 10px 0 0 20px;
+    font-size: 12px;
+    border: 0;
+}
+
+.header-top .header-top-search .search-text:focus {
+    outline: 0px;
+}
+
+.header-top .header-top-search .search-submit {
+    margin: -1px -1px auto auto;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #e4e4e4;
+    float: right;
+    background: #ffffff url(../image/topsearch-icon1.png) center center no-repeat!important;
+}
+
+.header-top .header-top-search .search-submit:hover {
+    background: #35b558 url(../image/topsearch-icon2.png) center center no-repeat!important;
+    border: 1px solid #35b558;
+    cursor: pointer;
+}
+
+.header-top .header-top-link {
+    width: 288px;
+    height: 50px;
+    float: right;
+    text-align: right;
+}
+
+.header-top-link-massage,
+.header-top-link-qqlogin,
+.header-top-link-login,
+.header-top-link-regist {
+    box-sizing: content-box;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.header-top .header-top-link .header-top-link-massage {
+    background: #fff url(../image/massage-icon1.gif) left center no-repeat;
+    background-size: 15px 13px;
+    position: relative;
+    padding: 0 7px 0 3px;
+}
+
+.header-top .header-top-link em:hover {
+    cursor: default;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    分割线      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.header-line {
+    width: 100%;
+    height: 2px;
+    background: #35b558;
+    background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca));
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    分割线以下      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    height: 300px;
+    overflow: visible;
+    z-index: 1;
+}
+
+.navs-outer {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    height: 42px;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+}
+
+.navs {
+    overflow: visible;
+    width: 1000px;
+    position: relative;
+    z-index: 100;
+    height: 42px;
+    margin: 0 auto;
+}
+
+nav .nav-items {
+    overflow: visible;
+    width: 740px;
+}
+
+nav .nav-items a {
+    display: inline-block;
+    height: 42px;
+    font-size: 14px;
+    line-height: 40px;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+nav .nav-items a:first-child {
+    width: 85px;
+}
+
+nav .nav-items .header-nav-detile {
+    overflow: visible;
+    width: 1000px;
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 43px;
+    height: 140px;
+    background: rgba(255, 255, 255, .97);
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+    padding-left: 69px;
+}
+
+nav .nav-items .header-nav-detile .header-nav {
+    overflow: visible;
+    position: relative;
+    width: 100px;
+    margin-left: -1px;
+    border-right: 1px solid #F7F7F7;
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 129px;
+    box-sizing: content-box;
+}
+
+.angel {
+    display: inline-block;
+    background-image: url(../image/sanjiao.png);
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    background-size: 100% 100%;
+    top: -8px;
+    left: 50px;
+    z-index: 999;
+    display: none;
+}
+
+nav .nav-items .header-nav-detile .header-nav:hover {
+    background-color: #F6F1F1;
+}
+
+nav .nav-items:hover .header-nav-detile {
+    display: block;
+}
+
+nav .nav-items .header-nav-detile .header-nav:hover .angel {
+    display: block;
+}
+
+nav .nav-items .header-nav-detile .header-nav ul {
+    margin-top: 10px;
+}
+
+nav .nav-items .header-nav-detile .header-nav ul li a {
+    line-height: 29px;
+    display: block;
+    text-align: left;
+    margin-right: 0;
+    font-size: 12px;
+    color: #666;
+    height: auto;
+    width: 120px;
+}
+
+nav .nav-items .header-nav-detile .header-nav ul li a:hover {
+    color: #35b558;
+}
+
+nav .nav-items a:hover {
+    color: #35b558;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    导航链接   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+nav .nav-link {
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav .nav-link a {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+nav .nav-link a .newstar {
+    width: 14px;
+    height: 15px;
+    position: relative;
+    top: -5px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-导航左   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+article {
+    overflow: visible;
+    position: relative;
+    top: -260px;
+    z-index: 1;
+    margin-top: 20px!important;
+}
+
+article .lesson {
+    overflow: visible;
+    width: 1000px;
+    height: 391px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article .lesson .lesson-left {
+    float: left;
+    height: 410px;
+    width: 700px;
+    /*border-top: 2px solid #35b558;*/
+    position: absolute;
+}
+
+.top-border {
+    border-top: 2px solid #35b558!important;
+}
+
+article .lesson .lesson-left ul li {
+    width: 208px;
+    height: 37px;
+    color: #e4e4e4;
+    cursor: default;
+    border: 1px solid #e4e4e4;
+    line-height: 37px;
+    background: url(../image/more-icon.png) 183px center no-repeat;
+    background-size: 6px 10px;
+}
+
+article .lesson .lesson-left ul li:hover {
+    cursor: pointer;
+    box-sizing: content-box;
+    border-left: 2px solid #35b558;
+    background: none;
+    width: 207px;
+    border-right: none;
+}
+
+article .lesson .lesson-left ul li .lesson-nav {
+    z-index: 1;
+    width: 170px;
+    height: 37px;
+    margin: 0 0 0 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 37px;
+    text-align: left;
+    display: block;
+}
+
+article .lesson .lesson-left ul li .lesson-nav:hover {
+    margin: 0 0 0 22px;
+}
+
+article .lesson .lesson-left ul li:hover .lesson-nav {
+    color: #35b558;
+}
+
+.lesson-nav-detial {
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    min-height: 373px;
+    min-width: 401px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    z-index: 100;
+    border-left: 0;
+    display: none;
+    padding-bottom: 30px
+}
+
+li:hover .lesson-nav-detial {
+    display: block;
+}
+
+.lndetial p {
+    font-size: 15px;
+    line-height: 14px;
+    margin: 20px 0 0 30px;
+    color: #333;
+}
+
+.lndetial p:hover {
+    color: #35b558;
+}
+
+.as a {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.as a:hover {
+    color: #35b558;
+}
+
+.as {
+    margin-left: 30px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-导航右   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+article .lesson .lesson-right {
+    width: 207px;
+    height: 382px;
+    float: right;
+    border: 1px solid #e4e4e4;
+}
+
+article .lesson .lesson-right .lesson-right-top {
+    border-bottom: 1px solid #e4e4e4;
+    height: 132px;
+}
+
+article .lesson .lesson-right .lesson-right-top p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+article .lesson .lesson-right .lesson-right-top ul {
+    margin-top: -12px;
+    margin-left: 12px;
+}
+
+article .lesson .lesson-right .lesson-right-top ul li a {
+    font-size: 12px;
+    line-height: 19px;
+    color: #666;
+}
+
+article .lesson .lesson-right .lesson-right-middle {
+    border-bottom: 1px solid #e4e4e4;
+    height: 94px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo {
+    position: absolute;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right {
+    position: absolute;
+    margin-left: 60px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0 10px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right ul {
+    padding-top: 15px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right ul li {
+    font-size: 12px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right .loginbottom {
+    width: 200px;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right .login,
+.regist {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    border: none;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right .login {
+    background-color: #FB5D20;
+    margin: 10px 0 0 0;
+}
+
+article .lesson .lesson-right .lesson-right-middle .photo-right .regist {
+    margin: 10px 0 0 10px;
+    background-color: #35b558;
+}
+
+article .lesson .lesson-right .lesson-right-bottom {
+    width: 211px;
+    height: 154px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a {
+    box-sizing: border-box;
+    float: left;
+    width: 52px;
+    height: 77px;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    text-align: center;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover span {
+    color: #35b558;
+}
+
+.icon {
+    background-image: url(../image/recommend.png);
+    background-size: 71px 232px;
+    width: 25px;
+    height: 25px;
+    margin: 13px auto 0;
+    display: block;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .li-text {
+    font-size: 12px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .li-more {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #E4E4E4;
+    box-sizing: content-box;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin: 5px auto;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .question {
+    background-position: -5px -3px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .wiki {
+    background-position: -5px -31px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .llesson {
+    background-position: -5px -59px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .club {
+    background-position: -5px -88px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .dl {
+    background-position: -5px -119px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .no {
+    background-position: -5px -145px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .job {
+    background-position: -5px -173px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a .lvip {
+    background-position: -5px -203px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .question {
+    background-position: -41px -3px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .wiki {
+    background-position: -41px -31px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .llesson {
+    background-position: -41px -59px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .club {
+    background-position: -41px -88px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .dl {
+    background-position: -41px -119px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .no {
+    background-position: -41px -145px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .job {
+    background-position: -41px -173px;
+}
+
+article .lesson .lesson-right .lesson-right-bottom a:hover .lvip {
+    background-position: -41px -203px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-滚动上   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.lesson-center {
+    margin-left: 209px;
+    width: 560px;
+}
+
+.scroll1 {
+    width: 560px;
+    height: 260px;
+    border: 1px solid #E4E4E4;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.scroll1:hover .tabl {
+    left: 0px;
+}
+
+.scroll1:hover .tabr {
+    right: 0px;
+}
+
+.tabs {
+    position: absolute;
+    width: 258px;
+    height: 8px;
+    bottom: 10px;
+    left: 155px;
+}
+
+.tabs span {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.tabs span.on {
+    background-color: #0f0;
+}
+
+.tabl {
+    left: -40px;
+    background-image: url(../image/tabl.png);
+    background-position: -12px -5px;
+}
+
+.tabl:hover {
+    background-position: -12px -65px;
+}
+
+.tabr {
+    right: -40px;
+    background-image: url(../image/tabr.png);
+    background-position: -8px -5px;
+}
+
+.tabr:hover {
+    background-position: -8px -65px;
+}
+
+.tabstyle {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    transition: left .3s ease, right .3s ease;
+}
+
+.tabimgs {
+    position: absolute;
+    width: 3000px;
+}
+
+.tabimgs a {
+    float: left;
+}
+
+.tabimgs a img {
+    width: 560px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-滚动下   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.scroll2 {
+    width: 560px;
+    height: 100px;
+    border: 1px solid #E4E4E4;
+    position: absolute;
+    margin: 282px 0 0 10px;
+}
+
+.scroll2:hover .tabl2 {
+    left: 0;
+}
+
+.scroll2:hover .tabr2 {
+    right: 0;
+}
+
+.tabimgs2 {
+    width: 2500px;
+    position: absolute;
+}
+
+.scroll2 .tabimgs2 a {
+    width: 186px;
+    height: 100px;
+    border-right: 1px solid #E4E4E4;
+    float: left;
+    text-align: center;
+}
+
+.scroll2 .tabimgs2 a img {
+    width: 40px;
+    height: 40px;
+}
+
+.scroll2 .tabimgs2 a p {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 4px;
+    line-height: 7px;
+}
+
+.scroll2 .tabimgs2 a {
+    padding-top: 8px;
+}
+
+.tabstyle2 {
+    position: absolute;
+    background-image: url(../image/left&right.png);
+    background-size: 48px 80px;
+    width: 24px;
+    height: 40px;
+    top: 30px;
+    transition: left .3s ease, right .3s ease;
+}
+
+.tabl2 {
+    left: -24px;
+}
+
+.tabr2 {
+    right: -24px;
+    background-position: -24px 0;
+}
+
+.tabl2:hover {
+    background-position: 0 -40px;
+}
+
+.tabr2:hover {
+    background-position: -24px -40px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-最新公开课  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.livelesson {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 260px;
+    margin: 20px auto;
+}
+
+.livelesson-title {
+    box-sizing: border-box;
+    width: 1000px;
+}
+
+.livelesson-title p {
+    box-sizing: border-box;
+    color: #35b558;
+    font-size: 18px;
+    float: left;
+}
+
+.livelesson-title i {
+    overflow: visible;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 25px 8px 0;
+    cursor: pointer;
+}
+
+.livelesson-title i:hover .question2 {
+    opacity: 1;
+    left: 23px;
+}
+
+.question2 {
+    overflow: visible;
+    width: 144px;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    top: -4px;
+    left: 17px;
+    -webkit-transition: left .6s ease, opacity .6s ease;
+    -moz-transition: left .6s ease, opacity .6s ease;
+    -ms-transition: left .6s ease, opacity .6s ease;
+    transition: left .6s ease, opacity .6s ease;
+}
+
+.question2 i {
+    background: url(../image/question_left.jpg);
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -13px;
+    top: -22px;
+    z-index: 10;
+}
+
+.livelesson-title a {
+    box-sizing: border-box;
+    float: right;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: 30px;
+}
+
+.livelessons a {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    width: 235px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+
+.livelessons a:hover {
+    border: 1px solid #35b558;
+}
+
+.livelessons a img {
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 145px;
+    z-index: 1;
+}
+
+.livelessons a .p1 {
+    box-sizing: border-box;
+    width: 233px;
+    padding: 0 10px;
+    height: 20px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.livelessons a .p2 {
+    box-sizing: border-box;
+    width: 233px;
+    padding: 0 10px;
+    height: 20px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+.ps {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    width: 233px;
+    height: 53px;
+    background: url(http://s1.jikexueyuan.com/index/images/openclass_shadow_52b7fa2.png) no-repeat;
+    color: #fff;
+}
+
+.livelesson .livelessons .livelesson-1 {
+    background-image: url(../image/teacher1.jpg);
+}
+
+.livelesson .livelessons .livelesson-2 {
+    background-image: url(../image/teacher2.jpg);
+}
+
+.livelesson .livelessons .livelesson-3 {
+    background-image: url(../image/teacher3.jpg);
+}
+
+.livelesson .livelessons .livelesson-4 {
+    margin-right: 0px;
+    background-image: url(../image/teacher4.jpg);
+}
+
+.livelesson .livelessons .livelesson-1:hover .livelesson-1-show {
+    opacity: 1;
+    display: block;
+}
+
+.livelesson .livelessons .livelesson-2:hover .livelesson-2-show {
+    opacity: 1;
+    display: block;
+}
+
+.livelesson .livelessons .livelesson-3:hover .livelesson-3-show {
+    opacity: 1;
+    display: block;
+}
+
+.livelesson .livelessons .livelesson-4:hover .livelesson-4-show {
+    margin-right: 0px;
+    opacity: 1;
+    display: block;
+}
+
+.livelesson .livelessons .livelesson-1:hover .ps {
+    display: none;
+}
+
+.livelesson .livelessons .livelesson-2:hover .ps {
+    display: none;
+}
+
+.livelesson .livelessons .livelesson-3:hover .ps {
+    display: none;
+}
+
+.livelesson .livelessons .livelesson-4:hover .ps {
+    display: none;
+}
+
+.shows {
+    box-sizing: border-box;
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    width: 233px;
+    height: 198px;
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+}
+
+.yudingbuttom {
+    box-sizing: border-box;
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: 20px auto 0;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #35b558;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-热门推荐  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.livelesson2 {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.livelesson2 ul {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 41px;
+    padding: 10px 0;
+    background: url(../image/hotnav_bc.jpg) 0 100% repeat-x;
+}
+
+.livelesson2 ul li {
+    float: left;
+    width: 16.6%;
+    height: 29px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.livelesson2 ul li:hover {
+    color: #35b558;
+    border-bottom: 2px solid #35b558;
+    background: url(../image/greensanjiao.png) center bottom no-repeat;
+    background-size: 10px 4px;
+}
+
+
+/*--------  推荐正文  ----------*/
+
+.livelesson2-hot {
+    overflow: visible;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.livelesson2-hot-inner1 {
+    overflow: visible;
+    width: 1100px;
+    height: 480px;
+}
+
+.livelesson2-hot-inner1 ul {
+    overflow: visible;
+}
+
+.livelesson2-hot-inner1 ul li {
+    box-sizing: border-box;
+    overflow: visible;
+    margin-right: 17px;
+    background: 0 0;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 235px;
+    float: left;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+.lesson-box {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    width: 231px;
+    height: 130px;
+    position: relative;
+}
+
+.shoucang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../image/shoucang.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.lesson-box a {
+    width: 231px;
+    height: 130px;
+    /*background: #000;*/
+}
+
+.blackd {
+    background: rgba(0, 0, 0, .4)!important;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+    /*width: 231px;
+    height: 130px;*/
+}
+
+.lesson-box a img {
+    width: 231px;
+    height: 130px;
+}
+
+.lessonplay {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../image/player.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.shoucang:hover {
+    background: url(../image/shoucang2.png);
+    background-size: 16px 16px
+}
+
+.livelesson2-hot-inner1 ul li:hover .shoucang {
+    opacity: 1;
+}
+
+.livelesson2-hot-inner1 ul li:hover .lessonplay {
+    opacity: 1;
+}
+
+.livelesson2-hot-inner1 ul li:hover .blackd {
+    opacity: 1;
+}
+
+.lesson-info {
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    background: #fff!important;
+    height: 67px;
+    padding: 10px;
+    position: relative;
+    z-index: 200;
+    bottom: 0;
+    transition: height .5s ease;
+}
+
+.lesson-info a {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.lesson-info p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    transition: opacity .5s ease, height .5s ease;
+}
+
+.livelesson2-hot-inner1 ul li:hover .lesson-info p {
+    height: 75px;
+    opacity: 1;
+}
+
+.timeandicon {
+    font-size: 12px;
+    color: gray;
+    overflow: visible;
+}
+
+.wordsinfo-time i {
+    background: url(../image/clok.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+.ddmargin {
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+.wordsinfo-time em {
+    font-size: 12px;
+    font-style: normal;
+    display: block;
+}
+
+.wordsinfo-level {
+    display: none;
+}
+
+.wordsinfo-level i {
+    background: url(../image/onelevel.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.wordsinfo-level em {
+    font-size: 12px;
+    font-style: normal;
+    display: block;
+}
+
+.wordsinfo {
+    position: absolute;
+    width: 210px;
+    white-space: nowrap;
+    bottom: 10px;
+}
+
+.wordsinfo .renshu {
+    float: right;
+    font-style: normal;
+    display: block;
+    margin-top: 5px;
+    display: none;
+}
+
+.wordsinfo-1 {
+    width: 120px;
+    float: left;
+    white-space: nowrap;
+}
+
+.grapnic {
+    display: block;
+}
+
+.graphic img {
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    bottom: 10px;
+    margin-left: 3px;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.livelesson2-hot-inner1 ul li:hover .lesson-info {
+    height: 175px;
+}
+
+.livelesson2-hot-inner1 ul li:hover .renshu,
+.livelesson2-hot-inner1 ul li:hover .wordsinfo-level {
+    display: block;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    正文-知识体系  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.lessonss {
+    width: 166px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.livelesson1 {
+    width: 1000px;
+    height: 542px;
+    margin: 20px auto;
+}
+
+.totle {
+    border-bottom: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    width: 999px;
+    height: 481px;
+    overflow: hidden;
+}
+
+.lessonss .front img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.lessonss .front h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 0px;
+}
+
+.lessonss .front span {
+    font-size: 14px;
+    color: #35b558;
+}
+
+.lessonss:hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.lessonss:hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.lessonss .front {
+    -webkit-transform: rotateY(0deg);
+    -webkit-transition: .6s;
+    -moz-transform: rotateY(0deg);
+    -moz-transition: .6s;
+    -ms-transform: rotateY(0deg);
+    -ms-transition: .6s;
+    transform: rotateY(0deg);
+    transition: .6s;
+    backface-visibility: hidden;
+    width: 166px;
+    height: 120px;
+}
+
+.lessonss .back {
+    -webkit-transform: rotateY(0deg);
+    -webkit-transition: .6s;
+    -moz-transform: rotateY(0deg);
+    -moz-transition: .6s;
+    -ms-transform: rotateY(0deg);
+    -ms-transition: .6s;
+    transform: rotateY(180deg);
+    transition: .6s;
+    backface-visibility: hidden;
+    margin-top: -120px;
+    width: 166px;
+    height: 120px;
+}
+
+.lessonss .back {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #E4E4E4;
+    width: 167px;
+    height: 120px;
+}
+
+.lessonss .back strong {
+    margin-top: 30px;
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.lessonss .back button {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    background: #35b558;
+    font-weight: 400;
+    border: 0 none;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    WiKi  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.wiki .wiki-box {
+    z-index: 1;
+    width: 333.3px;
+    height: 370px;
+    border: 1px solid #333;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+}
+
+.middle {
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.wiki .wiki-box:hover {
+    border: 1px solid #35b558;
+}
+
+.wiki .wiki-box h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.wiki .wiki-box .book {
+    overflow: visible;
+    position: relative;
+    background: #999;
+    margin-top: 10px;
+    z-index: 1;
+    float: left;
+    width: 142px;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    transform-origin: 0 0 0;
+    -moz-animation: ffk-animate2 1s ease forwards;
+    -webkit-animation: ffk-animate2 1s ease forwards;
+    -o-animation: ffk-animate2 1s ease forwards;
+    -ms-animation: ffk-animate2 1s ease forwards;
+    animation: ffk-animate2 1s ease forwards;
+}
+
+.wiki .wiki-box .book img {
+    z-index: 1;
+    float: left;
+    width: 142px;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    transform-origin: 0 0 0;
+    transition: 1s;
+}
+
+.wiki .wiki-box .book:hover img {
+    -webkit-transform: rotateY(20deg);
+    -moz-transform: rotateY(20deg);
+    -ms-transform: rotateY(20deg);
+    transform: rotateY(20deg);
+}
+
+.wiki .wiki-box .book:hover .look {
+    display: block;
+}
+
+.wiki .wiki-box .book-outer {
+    overflow: visible;
+    z-index: 1;
+    width: 142px;
+    height: 258px;
+    float: left;
+    cursor: pointer;
+}
+
+.wiki .wiki-box .book-outer:hover h3,
+.wiki .wiki-box .book-outer:hover span {
+    color: #35b558;
+}
+
+.wiki .wiki-box .book-outer h3 {
+    float: left;
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 13px;
+    margin: 10px auto;
+    font-weight: 400;
+    width: 100%;
+}
+
+.wiki .wiki-box .book-outer span {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    display: block;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.marginl {
+    margin-left: 17px;
+}
+
+.wiki .wiki-box ul {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.wiki .wiki-box ul li {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    color: #999;
+    line-height: 12px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.wiki .wiki-box ul li a p {
+    margin: 0;
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    color: #999;
+    line-height: 12px;
+}
+
+.wiki .wiki-box ul li a:hover span,
+.wiki .wiki-box ul li a:hover p {
+    color: #35b558;
+}
+
+.wiki .wiki-box ul li a span {
+    text-align: right;
+    display: block;
+    float: right;
+    width: 90px;
+    color: #999;
+    line-height: 12px;
+}
+
+.book .look {
+    position: absolute;
+    width: 40px;
+    z-index: 10;
+    right: -10px;
+    top: -13px;
+    background: url(../image/look.png) center center no-repeat;
+    background-size: 100% 100%;
+    height: 20px;
+    display: none;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    战略合作企业  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.tiaozheng {
+    margin-top: -110px;
+}
+
+.scroll3outer {
+    width: 1000px;
+    height: 90px;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.scroll3 {
+    width: 960px;
+    height: 50px;
+    position: relative;
+}
+
+.scroll3outer:hover .tabl3 {
+    left: 0;
+}
+
+.scroll3outer:hover .tabr3 {
+    right: 0;
+}
+
+.tabimgs3 {
+    width: 3000px;
+    position: absolute;
+}
+
+.tabimgs3 a {
+    float: left;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.tabimgs3 a img {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+
+.scroll3outer .tabl3 {
+    top: 20px;
+    left: -40px;
+    background-image: url(../image/tabl.png);
+    background-position: -12px -5px;
+}
+
+.scroll3outer .tabr3 {
+    top: 20px;
+    right: -40px;
+    background-image: url(../image/tabr.png);
+    background-position: -8px -5px;
+}
+
+.scroll3outer .tabl3:hover {
+    background-position: -12px -65px;
+}
+
+.scroll3outer .tabr3:hover {
+    background-position: -8px -65px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    合作院校  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.tiaozheng2{
+    margin-top: -386px;
+    height: 337px;
+}
+.scroll4outer {
+    width: 1000px;
+    height: 150px;
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.scroll4outer:hover .tabl4 {
+    left: 0;
+}
+
+.scroll4outer:hover .tabr4 {
+    right: 0;
+}
+
+.scroll4outer .scroll4 {
+    width: 947px;
+    height: 110px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.scroll4outer .tabimgs4 {
+    width: 3000px;
+    position: absolute;
+}
+
+.scroll4outer .tabimgs4 a {
+    text-align: center;
+    width: 137px;
+    float: left;
+}
+
+.scroll4outer .tabimgs4 a img {
+    width: 110px;
+    height: 110px;
+}
+
+.scroll4outer .tabl4 {
+    top: 50px;
+    left: -40px;
+    background-image: url(../image/tabl.png);
+    background-position: -12px -5px;
+}
+
+.scroll4outer .tabr4 {
+    top: 50px;
+    right: -40px;
+    background-image: url(../image/tabr.png);
+    background-position: -8px -5px;
+}
+
+.scroll4outer .tabl4:hover {
+    background-position: -12px -65px;
+}
+
+.scroll4outer .tabr4:hover {
+    background-position: -8px -65px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    脚注  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+footer {
+    overflow: visible;
+    margin-top: -330px;
+}
+
+.footerinfo {
+    overflow: visible;
+    background: #fafafa;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footerinfoinner {
+    overflow: visible;
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 245px;
+}
+
+.footerinfoinner dl {
+    width: 185px;
+    padding-left: 30px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid #E4E4E4;
+    min-height: 175px;
+    box-sizing: border-box;
+}
+
+.footerinfoinner dl dt {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footerinfoinner dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+dt:hover {
+    color: #35b558;
+}
+
+dd:hover {
+    color: #35b558;
+}
+
+.search-share {
+    overflow: visible;
+    width: 219px;
+    float: left;
+    min-height: 226px;
+    border-left: 1px solid #E4E4E4;
+    padding: 20px 0 0 40px;
+}
+
+.jiketxt {
+    font-size: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.app-download:hover p {
+    color: #35b558;
+}
+
+.app-download img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 21px;
+}
+
+.app-download strong {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.app-download p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+    background: url(../image/mores-icon.png) 129px center no-repeat;
+    background-size: 7px 13px;
+}
+
+.share {
+    margin-top: 15px;
+    overflow: visible;
+}
+
+.weibo {
+    background: url(../image/iconss.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.weibo:hover {
+    background-position: -23px -40px;
+}
+
+.tieba {
+    background: url(../image/iconss.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    background-position: -145px 0;
+    position: relative;
+}
+
+.tieba:hover {
+    background-position: -145px -40px
+}
+
+.weixin {
+    overflow: visible;
+    background: url(../image/iconss.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    background-position: -23px -82px;
+}
+
+.weixin:hover {
+    background-position: -23px -122px
+}
+
+.weixin:hover img {
+    display: block;
+}
+
+.weixin img {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    z-index: 200;
+    display: none;
+}
+
+.kefu-online {
+    margin-top: 15px;
+    padding-left: 35px;
+    display: block;
+    float: left;
+}
+
+.kefuicon {
+    background-position: 0 0;
+    float: left;
+    width: 45px;
+    height: 40px;
+    margin-left: -40px;
+    background: url(../image/kefuicon.png) no-repeat 4px 0/80px 40px;
+}
+
+.kefu-online a h5 {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.kefu-online a p {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.kefu-online:hover h5 {
+    color: #35b558;
+}
+
+.kefu-online:hover p {
+    color: #35b558;
+}
+
+footer .beian {
+    width: 900px;
+    text-align: center;
+    width: 900px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 20px auto;
+}

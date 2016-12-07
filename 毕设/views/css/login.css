@@ -1,0 +1,199 @@
+body,
+div,
+h1,
+form,
+input{
+	margin: 0;
+	user-select:none;
+	padding: 0;
+	font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+html{
+	height: 100%;
+}
+.warpper{
+	height: 100%;
+}
+body{
+	min-width: 800px;
+	min-width: 500px;
+	height: 100%;
+}
+/*蓝色背景*/
+.middle{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: #2d85ca;
+	top: 50%;
+	margin-top: -100px;
+	z-index: 1;
+}
+/*居中框*/
+.mainbox{
+	height: 500px;
+	width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	text-align: center;
+	z-index: 100;
+
+}
+
+h1{
+	font-size: 60px;
+}
+/*登录框*/
+.loginbox{
+	width: 350px;
+	height: 250px;
+	background: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -175px;
+	border-radius: 5px;
+}
+
+.loginbox form{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+.inputtext{
+	text-indent: 10px;
+	width: 200px;
+	height: 30px;
+	border: 0;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+/*登录按钮*/
+.buttom{
+	width: 150px;
+	height: 30px;
+	margin-top: 25px;
+	background-color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.buttom:hover{
+	background-color: #e6e6e6;
+}
+/*注册按钮*/
+.registlink{
+	position: absolute;
+	bottom: 18px;
+	right: 40px;
+	color: #333;
+	font-size: 14px;
+	display: block;
+	line-height: 0px;
+	cursor: pointer;
+	text-decoration: underline;
+	display: block;
+}
+/*左右梯形*/
+.middle-left{
+	position: absolute;
+    width: 0px;
+    height: 160px;
+    border-left: 69px solid #93BEFE;
+    border-top: 20px solid rgba(0,0,0,0);
+    border-bottom: 20px solid rgba(0,0,0,0);
+    z-index: 100;
+    background-color: #fff;
+    left: -69px;
+    top: 25px;
+}
+
+.middle-right{
+	position: absolute;
+    width: 0px;
+    height: 160px;
+    border-right: 69px solid #93BEFE;
+    border-top: 20px solid rgba(0,0,0,0);
+    border-bottom: 20px solid rgba(0,0,0,0);
+    z-index: 100;
+    background-color: #fff;
+    left: 350px;
+    top: 25px;
+}
+/*登录框阴影*/
+.middle-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(85deg);
+    top: 148px;
+    left: 0px;
+}
+
+
+/*注册页面黑色背景*/
+.registbg{
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+/*注册框*/
+.registbox{
+	width: 350px;
+	height: 250px;
+	background: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -175px;
+	z-index: 100;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 24px;
+	transition: height .5s ease;
+}
+/*输入框*/
+.inputtext{
+	text-indent: 10px;
+    width: 200px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 25px;
+    transform: margin-top 5s ease;
+}
+/*最小化*/
+.minbuttombg{
+	height: 15px;
+    width: 24px;
+    position: absolute;
+    right: 22px;
+    top: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.minbuttombg:hover .minbuttom{
+	background-color: #eee;
+}
+.minbuttom{
+	height: 3px;
+	width: 21px;
+	background-color: #fff;
+	position: absolute;
+    top: 5px;
+    border-radius: 2px;
+}

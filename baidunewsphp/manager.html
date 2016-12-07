@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新闻后台</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/manager.css">
+</head>
+
+<body>
+    <div id="notes" class="note notes">成功</div>
+    <div id="notef" class="note notef">失败</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>百度新闻后台管理</h1>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="delete partbg">
+                    <form id="select" class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input id="insertboxbtn" type="button" class="btn btn-success" value="新增" />
+                                <!-- <input id="selectbtn" type="button" class="btn btn-info" value="查询" /> -->
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>类型</th>
+                                            <th>标题</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="datatable">
+                                        <!-- 动态添加 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row showbox">
+        <div class="col-md-12 showboxinner insertbox">
+            <div class="insert partbg">
+                <h2>新增</h2>
+                <span class="minpage">—</span>
+                <form id="insert" class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- <input type="text" id="newstype" name="newstype" placeholder="新闻分类" /> -->
+                            <select class="form-control" id="newstype" name="newstype">
+                                <option selected="selected" value="推荐">推荐</option>
+                                <option value="百家">百家</option>
+                                <option value="本地">本地</option>
+                                <option value="图片">图片</option>
+                                <option value="娱乐">娱乐</option>
+                                <option value="社会">社会</option>
+                                <option value="军事">军事</option>
+                                <option value="科技">科技</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea id="newstitle" name="newstitle" placeholder="新闻标题"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea id="newscontent" name="newscontent" placeholder="新闻内容"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" id="newsimage" name="newsimage" placeholder="图片名称" />
+                        </div>
+                        <div class="col-md-12">
+                            <input id="insertbtn" type="button" class="btn btn-success" value="新增" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-12 showboxinner updatebox">
+            <div class="update partbg">
+                <h2>详情/编辑/更新</h2>
+                <span class="minpage">—</span>
+                <form id="update" class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="newsid_d" name="newsid" placeholder="新闻编码" />
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" id="newstype_d" name="newstype" placeholder="新闻分类" />
+                        </div>
+                        <div class="col-md-12">
+                            <textarea id="newstitle_d" name="newstitle" placeholder="新闻标题"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea id="newscontent_d" name="newscontent" placeholder="新闻内容"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" id="newsimage_d" name="newsimage" placeholder="图片名称" />
+                        </div>
+                        <div class="col-md-12">
+                            <input id="updatebtn" type="button" class="btn btn-warning" value="更新" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/manager.js"></script>
+</body>
+
+</html>

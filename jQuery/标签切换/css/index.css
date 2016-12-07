@@ -1,0 +1,33 @@
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+li{
+	float: left;
+	background-color: #ccc;
+	margin-right: 2px;
+	border:1px solid #fff;
+}
+.tabin{
+	background-color: #6e6e6e;
+	border-bottom: 1px solid #6e6e6e;
+}
+
+.contentfirst{
+	clear:both;
+	background-color: #6e6e6e;
+	width: 300px;
+	height: 100px;
+	display: none;
+}
+.content{
+	display: block;
+}
+
+
+/*loading*/
+
+.loadtab li{
+	
+}

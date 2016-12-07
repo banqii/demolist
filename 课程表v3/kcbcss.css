@@ -1,0 +1,74 @@
+body {                                                       /*整体样式*/
+    text-align: center;
+    font: 12px 微软雅黑;
+    color: #FFF;
+    background-color: #333;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.article {                                                  /*表格位置*/
+    position: relative;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.header {                                                   /*头部位置*/
+    position: relative;
+    margin-top: 5%;
+}
+
+.table {                                                    /*表格样式*/                         
+    width: 800px;
+    border: 2px;
+    border-color: #333;
+    margin: auto;
+    border-spacing: 2px;
+    border-collapse: collapse;
+}
+
+.table td,.table th{ border:1px solid #444;}
+
+.table tr th{                                               /*表格头部样式*/
+    width: 50px;
+    height: 50px;
+}
+
+.table tr td:nth-child(1){                                    /*课数样式*/
+    width:50;
+    height:50;
+    text-align:center;
+}
+
+.table tr td{                                     /*表中样式*/
+    width:50;
+    text-align:center;
+}/*
+.table tr td:nth-child(3){
+    width:50;
+    text-align:center;
+}
+.table tr td:nth-child(4){
+    width:50;
+    text-align:center;
+}
+.table tr td:nth-child(5){
+    width:50;
+    text-align:center;
+}
+.table tr td:nth-child(6){
+    width:50;
+    text-align:center;
+}
+.table tr td:nth-child(7){
+    width:50;
+    text-align:center;
+}
+.table tr td:nth-child(8){
+    width:50;
+    text-align:center;
+}*/

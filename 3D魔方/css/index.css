@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #3C403C;
+}
+
+#box {
+    /*动画*/
+    -webkit-animation-name: animation;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    /*显示方式*/
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 80px 80px 0;
+    /*动画*/
+    animation-name: animation;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    /*显示方式*/
+    transform-style: preserve-3d;
+    transform-origin: 80px 80px 0;
+    /*位置*/
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+@-webkit-keyframes animation {
+    /*动画样式*/
+    /*from,to{}*/
+    20% {
+        -webkit-transform: rotateX(90deg);
+    }
+    40% {
+        -webkit-transform: rotateY(90deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(90deg);
+    }
+    80% {
+        -webkit-transform: rotateY(90deg);
+    }
+    100% {
+        -webkit-transform: rotateX(90deg);
+    }
+}
+
+@keyframes animation {
+    /*动画样式*/
+    /*from,to{}*/
+    20% {
+        transform: rotateX(90deg);
+    }
+    40% {
+        transform: rotateY(90deg);
+    }
+    60% {
+        transform: rotateZ(90deg);
+    }
+    80% {
+        transform: rotateY(-90deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+#box .one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    /*设置6个面的样式*/
+    position: absolute;
+    height: 162px;
+    width: 162px;
+    font-size: 110px;
+    opacity: .5;
+}
+
+
+/*设置6个面的三维位置*/
+
+#box .one {
+    transform: translateZ(78px);
+    -webkit-transform: translateZ(78px);
+}
+
+#box .two {
+    transform: rotateX(90deg) translateZ(78px);
+    -webkit-transform: rotateX(90deg) translateZ(78px);
+}
+
+#box .three {
+    transform: translateZ(-78px);
+    -webkit-transform: translateZ(-78px);
+}
+
+#box .four {
+    transform: rotateX(-90deg) translateZ(78px);
+    -webkit-transform: rotateX(-90deg) translateZ(78px);
+}
+
+#box .five {
+    transform: rotateY(90deg) translateZ(78px);
+    -webkit-transform: rotateY(90deg) translateZ(78px);
+}
+
+#box .six {
+    transform: rotateY(-90deg) translateZ(78px);
+    -webkit-transform: rotateY(-90deg) translateZ(78px);
+}
+
+.small {
+    /*设置小块的样式*/
+    height: 48px;
+    width: 48px;
+    float: left;
+    background-color: #134346;
+    border: 3px solid #12ADC1;
+}

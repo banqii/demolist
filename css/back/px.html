@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css基本单位</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	body{
+		font-family: "Comic Sans MS";
+		color:green;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.outer{
+		/*font-size: 2em;*/
+		width:200px;
+		height: 200px;
+		background-color:red;
+		/*text-indent: 2em;
+		word-wrap:break-word;*/
+		/*text-align: center;*/
+		/*text-align: justify;*/
+		/*以下三个配合实现*/
+		overflow: hidden;/*超出的隐藏*/
+		white-space: nowrap;/*不让换行 直到br*/
+		text-overflow:ellipsis;/*...*/
+
+		border:10px solid yellow;
+		border-radius: 10px;
+		opacity: 0.5;
+	}
+	.test{
+		font-size: 2rem;
+		width:100px;
+		height: 100px;
+		background-color:blue;
+	}
+	ul li{
+		list-style: circle;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	</style>
+</head>
+<body>
+	<div class="outer">
+	asdfasdfasdfasdfasdfasdfasdfasd
+	</div>
+	<span class="test">我是h1</span>
+	<span class="test">我是span2</span>	
+	<ul>
+		<li>测试1</li>
+		<li>测试2</li>
+	</ul>
+	<ol>
+		<li>测试1</li>
+		<li>测试2</li>
+	</ol>
+	<table border="1">
+		<tr>
+			<td>xiaoming</td>
+			<td>第一</td>
+		</tr>
+		<tr>
+			<td>xiaoming</td>
+			<td>第二</td>
+		</tr>
+	</table>
+</body>
+</html>

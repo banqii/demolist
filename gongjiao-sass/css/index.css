@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body,
+div,
+span {
+  margin: 0;
+  padding: 0; }
+
+.schedule1 {
+  font-family: '黑体';
+  width: 700px;
+  height: 350px;
+  margin: 10px auto;
+  border: 2px solid #008B45; }
+  .schedule1 span {
+    display: inline-block; }
+  .schedule1 .name {
+    height: 30%;
+    width: 100%; }
+    .schedule1 .name .bus-name {
+      background-color: #cc3333;
+      height: 75%;
+      width: 25%;
+      color: #fff;
+      font-size: 50px;
+      font-weight: bolder;
+      margin-top: 20px;
+      text-align: center; }
+      .schedule1 .name .bus-name p {
+        margin: 0;
+        line-height: 70px; }
+    .schedule1 .name .station-name {
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+      width: 73%; }
+  .schedule1 .time {
+    padding-left: 10px; }
+    .schedule1 .time span {
+      font-weight: bold; }
+  .schedule1 .stations {
+    width: 100%;
+    height: 160px;
+    background-color: #008B45;
+    padding-top: 5px; }
+    .schedule1 .stations li {
+      -webkit-writing-mode: vertical-lr;
+      float: left;
+      width: 6.66667%;
+      font-size: 20px;
+      color: #fff;
+      line-height: 20px;
+      list-style: none; }
+  .schedule1 .massages {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    .schedule1 .massages .msg p {
+      font-size: 12px;
+      font-weight: bolder; }
+    .schedule1 .massages .dir .line {
+      position: absolute;
+      height: 3px;
+      width: 525px;
+      top: 20px;
+      left: 90px;
+      background-color: #cc3333; }
+    .schedule1 .massages .dir .triangle {
+      position: absolute;
+      width: 0;
+      left: 609px;
+      top: 13px;
+      border-top: 10px solid transparent;
+      border-left: 10px solid #cc3333; }
+
+.schedule2 {
+  font-family: '黑体';
+  width: 700px;
+  height: 350px;
+  margin: 10px auto;
+  border: 2px solid #008B45; }
+  .schedule2 span {
+    display: inline-block; }
+  .schedule2 .name {
+    height: 30%;
+    width: 100%; }
+    .schedule2 .name .bus-name {
+      background-color: #cc3333;
+      height: 75%;
+      width: 25%;
+      color: #fff;
+      font-size: 50px;
+      font-weight: bolder;
+      margin-top: 20px;
+      text-align: center; }
+      .schedule2 .name .bus-name p {
+        margin: 0;
+        line-height: 70px; }
+    .schedule2 .name .station-name {
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+      width: 73%; }
+  .schedule2 .time {
+    padding-left: 10px; }
+    .schedule2 .time span {
+      font-weight: bold; }
+  .schedule2 .stations {
+    width: 100%;
+    height: 160px;
+    background-color: #008B45;
+    padding-top: 5px; }
+    .schedule2 .stations li {
+      -webkit-writing-mode: vertical-lr;
+      float: left;
+      width: 11.11111%;
+      font-size: 20px;
+      color: #fff;
+      line-height: 20px;
+      list-style: none; }
+  .schedule2 .massages {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    .schedule2 .massages .msg p {
+      font-size: 12px;
+      font-weight: bolder; }
+    .schedule2 .massages .dir .line {
+      position: absolute;
+      height: 3px;
+      width: 525px;
+      top: 20px;
+      left: 90px;
+      background-color: #cc3333; }
+    .schedule2 .massages .dir .triangle {
+      position: absolute;
+      width: 0;
+      left: 609px;
+      top: 13px;
+      border-top: 10px solid transparent;
+      border-left: 10px solid #cc3333; }
+
+/*# sourceMappingURL=index.css.map */

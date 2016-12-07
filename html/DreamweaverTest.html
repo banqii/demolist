@@ -1,0 +1,109 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>百度一下，你就知道</title>
+    </head>
+    <style type="text/css">
+    body {
+        text-align: center;
+    }
+    
+    .allcenter {
+        margin: 0 auto;
+        width: 720px;
+        text-align: center;
+    }
+    
+    .inputtext {
+        border: 1px solid #b6b6b6;
+        display: inline-block;
+        width: 539px;
+        text-indent: 6px;
+        font-size: 16px;
+        height: 35px;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .inputsub {
+        border-style: none;
+        width: 100px;
+        height: 36px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        background: #3385ff;
+        border-bottom: 1px solid #2d78f4;
+        display: block;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+	 .more{
+    	display: inline-block;
+    
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: right;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    }
+    .login {
+        display: inline-block;
+        float: right;
+        color: #333;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+    .a {
+        float: right;
+        color: #333;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 20px;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+    </style>
+
+    <body>
+        <div>
+        <a href="http://www.baidu.com/more/" name="more" class="more">更多产品</a>
+         <a href="http://www.baidu.com/gaoji/preferences.html" name="setting" class="login">设置</a>
+          <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" name="login" class="login" onClick="return false;">登录</a>
+           <a href="http://tieba.baidu.com" name="tieba" class="a">贴吧</a>
+           <a href="http://v.baidu.com" name="video" class="a">视频</a>
+           <a href="http://map.baidu.com" name="map" class="a">地图</a>
+           <a href="http://www.hao123.com" name="hao123" class="a">hao123</a>
+            <a href="http://news.baidu.com" name="news" class="a">新闻</a><strong>
+            <a href="http://www.nuomi.com/?cid=002540" name="tj_trnuomi" class="a">糯米</a>
+        </div>
+        <form name="f" target="_blank" id="form" method="get" action="http://www.baidu.com/s">
+            <div class="allcenter">
+                <div>
+                    <img src="https://www.baidu.com/img/bd_logo1.png" title="百度" alt="百度图片" width="270" height="129">
+                </div>
+                <div>
+                    <input class="inputtext" type="text" name="i" id="intext" size="60" maxlength="100" autocomplete="off">
+                    <input class="inputsub" type="submit" value="百度一下" id="sub" />
+                </div>
+            </div>
+        </form>
+    </body>
+
+    </html>

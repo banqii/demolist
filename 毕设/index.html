@@ -1,0 +1,123 @@
+<%@page pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>进销存管理系统</title>
+<link rel="stylesheet" type="text/css" href="views/css/index.css">
+</head>
+
+<body oncontextmenu="return false">
+    <div class="wrapper">
+        <header>
+            <div class="logininf">
+                <p>操作员：${username}</p>
+                <p>
+                    <a href="loginpage">退出</a>
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li id="ptransform"><img class="sicon"
+                    src="views/image/truck.png">
+                    <p>采购管理</p></li>
+                <li id="wtransform"><img class="sicon"
+                    src="views/image/Warehouse.png">
+                    <p>仓库管理</p></li>
+                <li id="stransform"><img class="sicon"
+                    src="views/image/shopping.png">
+                    <p>销售管理</p></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="purchase" class="purchase pos">
+                <span class="pointleft ppoint"></span>
+                <div class="inner">
+                    <div class="head">
+                        <ul>
+                            <li><img src="views/image/in.png">
+                                <p>新建采购单</p></li>
+                            <li><img src="views/image/out.png">
+                                <p>新建采购单</p></li>
+                            <li><img src="views/image/chack.png">
+                                <p>新建采购单</p></li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <h1>采购管理</h1>
+                </div>
+            </div>
+            <div id="warehouse" class="warehouse pos">
+                <span class="pointleft wpoint"></span>
+                <div class="inner">
+                    <div class="head">
+                        <ul>
+                            <li id="inwarehouseb"><img src="views/image/in.png">
+                                <p>新建入库单</p></li>
+                            <li id="outwarehouseb"><img src="views/image/out.png">
+                                <p>新建出库单</p></li>
+                            <li id="chackwarehouseb"><img src="views/image/chack.png">
+                                <p>新建盘点单</p></li>
+                        </ul>
+                    </div>
+                    <hr />
+
+
+                    <!-- html片段加载区<span>${success}</span> -->
+                    <div id="loader"></div>
+                    <!-- 查询显示区 -->
+                    <div class="selectbox">
+                        <table style="border:1px solid #333;" width="50%">
+                            <tr>
+                                <th align="center">入库单号</th>
+                                <th align="center">入库时间</th>
+                                <th align="center">交货人</th>
+                                <th align="center">保管员</th>
+                                <th align="center">操作员</th>
+                                <!-- <th align="center">操作</th>-->
+                            </tr>
+                            <c:forEach items="${requestScope.inwares}" var="inware">
+                                <tr>
+                                    <td align="center">${inware.inware_id}</td>
+                                    <td align="center">${inware.inwaredate}</td>
+                                    <td align="center">${inware.inname}</td>
+                                    <td align="center">${inware.keepname}</td>
+                                    <td align="center">${inware.ename}</td>
+                                    <!-- 
+                                    <td>
+                                        <input type="button" value="详情" onClick="det(${inware.inware_id })">
+                                    </td> -->
+                                </tr>
+                            </c:forEach>
+                        </table>
+                        <div class="detileload"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sale" class="sale pos">
+                <span class="pointleft spoint"></span>
+                <div class="inner">
+                    <div class="head">
+                        <ul>
+                            <li><img src="views/image/in.png">
+                                <p>新建销售单</p></li>
+                            <li><img src="views/image/out.png">
+                                <p>新建销售单</p></li>
+                            <li><img src="views/image/chack.png">
+                                <p>新建销售单</p></li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <h1>销售管理</h1>
+                </div>
+            </div>
+            <script type="text/javascript" src="views/scripts/jquery.min.js"></script>
+            <script type="text/javascript" src="views/scripts/index.js"></script>
+        </article>
+    </div>
+</body>
+
+</html>

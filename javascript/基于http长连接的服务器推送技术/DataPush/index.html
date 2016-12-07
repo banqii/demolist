@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<h1>测试</h1>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	// $.ajax({
+	// 	url: "data.php",
+	// 	dataType: "json",
+	// 	success: function(data){
+	// 		console.log(data);
+	// 	}
+	// });
+	//前端隔一段时间发一次请求
+	
+	var getXmlHttpRequest = function(){
+		if(window.XMLHttpRequest){
+			//主流浏览器提供了XMLHttpRequest对象
+			return new XMLHttpRequest();
+		}else if(window.ActiveXObject){
+			return ActiveXObject("Microsoft.XMLHTTP");
+		}
+	}
+	var xhr = getXmlHttpRequest();
+	xhr.onreadystatechange = function(){
+		console.log(xhr.readyState);
+		if (xhr.readyState == 3 && xhr.status == 200) {
+			console.log(xhr.responseText);
+		}
+	}
+	xhr.open("get","data.php",true);
+	xhr.send("");
+</script>
